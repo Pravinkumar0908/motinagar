@@ -64,20 +64,8 @@ export function PortalNavbar({ onMobileMenuToggle }: PortalNavbarProps) {
           )}
 
           <Link href="/" className="flex items-center gap-2 sm:gap-2.5 shrink-0 group">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200/90 flex items-center justify-center shadow-2xs group-hover:scale-105 transition-transform duration-200">
-              <svg viewBox="0 0 48 48" className="w-6 h-6 sm:w-7 sm:h-7" fill="none">
-                <path d="M24 4L26 8H22L24 4Z" fill="#D97706" />
-                <circle cx="24" cy="3.5" r="1.5" fill="#F59E0B" />
-                <path d="M16 16C16 11.5817 19.5817 8 24 8C28.4183 8 32 11.5817 32 16H16Z" fill="#B45309" />
-                <path d="M18 16C18 12.6863 20.6863 10 24 10C27.3137 10 30 12.6863 30 16H18Z" fill="#D97706" />
-                <rect x="17" y="16" width="2" height="15" fill="#92400E" rx="0.5" />
-                <rect x="23" y="16" width="2" height="15" fill="#B45309" rx="0.5" />
-                <rect x="29" y="16" width="2" height="15" fill="#92400E" rx="0.5" />
-                <rect x="13" y="31" width="22" height="4" fill="#78350F" rx="1" />
-                <rect x="11" y="35" width="26" height="4" fill="#92400E" rx="1" />
-                <circle cx="9" cy="34" r="5" fill="#15803D" opacity="0.85" />
-                <circle cx="39" cy="34" r="5" fill="#15803D" opacity="0.85" />
-              </svg>
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-950 border border-amber-400/50 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-200 p-1">
+              <img src="/favicon.svg" alt="Moti Nagar Emblem" className="w-full h-full object-contain filter drop-shadow-sm" />
             </div>
             <div>
               <div className="text-slate-900 font-extrabold text-sm sm:text-base tracking-tight leading-none">
