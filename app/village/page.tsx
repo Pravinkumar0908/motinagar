@@ -47,10 +47,10 @@ import { MobileBottomNav } from '@/components/mobile-bottom-nav'
 import { MandiWeatherWidget } from '@/components/mandi-weather-widget'
 
 // Types & Constants
-export const GOOGLE_MAPS_SHORT_URL = 'https://maps.app.goo.gl/GM47mAhRpmHp5qYw6'
-export const GOOGLE_MAPS_FULL_URL = 'https://www.google.com/maps/place/Maha+Shop/@25.7985349,76.2135184,872m/data=!3m2!1e3!4b1!4m6!3m5!1s0x396e33bd7472e40f:0x12891acc89209609!8m2!3d25.7985349!4d76.2160933!16s%2Fg%2F11lv_15f6x?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D'
-export const GOOGLE_MAPS_EMBED_URL = 'https://maps.google.com/maps?q=25.7985349,76.2160933&hl=hi&z=16&output=embed'
-export const GOOGLE_MAPS_DIRECTIONS_URL = 'https://www.google.com/maps/dir/?api=1&destination=25.7985349,76.2160933'
+const GOOGLE_MAPS_SHORT_URL = 'https://maps.app.goo.gl/GM47mAhRpmHp5qYw6'
+const GOOGLE_MAPS_FULL_URL = 'https://www.google.com/maps/place/Maha+Shop/@25.7985349,76.2135184,872m/data=!3m2!1e3!4b1!4m6!3m5!1s0x396e33bd7472e40f:0x12891acc89209609!8m2!3d25.7985349!4d76.2160933!16s%2Fg%2F11lv_15f6x?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D'
+const GOOGLE_MAPS_EMBED_URL = 'https://maps.google.com/maps?q=25.7985349,76.2160933&hl=hi&z=16&output=embed'
+const GOOGLE_MAPS_DIRECTIONS_URL = 'https://www.google.com/maps/dir/?api=1&destination=25.7985349,76.2160933'
 
 interface Place {
   id: string
