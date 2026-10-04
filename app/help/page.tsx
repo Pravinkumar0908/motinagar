@@ -1,0 +1,10 @@
+import { ArrowRight, HeartPulse, Phone, ShieldAlert } from 'lucide-react'
+import { SiteFooter } from '@/components/site-footer'
+import { SiteHeader } from '@/components/site-header'
+import { SectionHeading } from '@/components/section-heading'
+
+const helpCards = [{ icon: Phone, title: 'जरूरी नंबर', text: 'पंचायत, एम्बुलेंस, पुलिस और स्वास्थ्य केंद्र की संपर्क जानकारी।', action: 'नंबर देखें' }, { icon: HeartPulse, title: 'स्वास्थ्य सहायता', text: 'दवा, टीकाकरण, गर्भावस्था और बच्चों के पोषण से जुड़ी मदद।', action: 'स्वास्थ्य जानकारी' }, { icon: ShieldAlert, title: 'मुश्किल में मदद', text: 'सुरक्षित रहने, शिकायत दर्ज कराने और तुरंत सहायता पाने के विकल्प।', action: 'सहायता पाएं' }]
+
+export default function HelpPage() {
+  return <main className="min-h-screen bg-[#f7f5ed] text-ink"><SiteHeader /><section className="mx-auto max-w-[1100px] px-5 pb-20 pt-12 lg:px-10 lg:pt-20"><SectionHeading eyebrow="सहायता केंद्र" title="आपको किस चीज़ में मदद चाहिए?" description="अपनी जरूरत चुनें। हम आपको सही जानकारी और अगले कदम तक पहुंचाएंगे।" /><div className="mt-12 grid gap-4 md:grid-cols-3">{helpCards.map(({ icon: Icon, title, text, action }) => <article key={title} className="rounded-2xl border border-[#e1e6de] bg-white p-6"><div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#eaf1e8] text-leaf"><Icon size={23} /></div><h2 className="mt-5 font-hindi text-lg font-bold text-[#2e4034]">{title}</h2><p className="mt-2 font-hindi text-sm leading-7 text-[#7d897e]">{text}</p><button className="mt-5 flex items-center gap-2 text-xs font-bold text-leaf">{action} <ArrowRight size={14} /></button></article>)}</div><div className="mt-8 rounded-2xl bg-leaf p-6 text-white sm:p-8"><h2 className="font-hindi text-xl font-bold">अपनी बात पंचायत तक पहुंचाएं</h2><p className="mt-2 max-w-lg font-hindi text-sm leading-7 text-[#d3e4d1]">सुझाव, समस्या या किसी सेवा की जरूरत हो तो हमें बताएं। आपका feedback गांव को बेहतर बनाने में मदद करेगा।</p><button className="mt-5 rounded-full bg-sunrise px-5 py-3 text-sm font-bold text-[#46330e]">सुझाव भेजें</button></div></section><SiteFooter /></main>
+}
