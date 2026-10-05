@@ -7,10 +7,7 @@ export const metadata: Metadata = {
   title: 'Moti Nagar - Bundi, Rajasthan | Official Village Portal',
   description: 'Moti Nagar, Bundi, Rajasthan - संस्कृति, विकास और एकता का प्रतीक | ग्राम पंचायत आधिकारिक डिजिटल सेवा केंद्र',
   icons: {
-    icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
+    icon: '/favicon.svg',
     shortcut: '/favicon.svg',
     apple: '/favicon.svg',
   },
