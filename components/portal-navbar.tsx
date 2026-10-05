@@ -37,6 +37,7 @@ export function PortalNavbar({ onMobileMenuToggle }: PortalNavbarProps) {
 
   const navLinks = [
     { name: 'Home', icon: Home, href: '/' },
+    { name: 'Farmer Hub', icon: Sprout, href: '/farmer-hub' },
     { name: 'Our Village', icon: MapPin, href: '/village' },
     { name: 'Panchayat', icon: Landmark, href: '/panchayat' },
     { name: 'Services', icon: Layers, href: '/services' },

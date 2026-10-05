@@ -649,8 +649,34 @@ export default function MotiNagarPortal() {
         </div>
       </section>
 
-      {/* 4.5 LIVE MANDI BHAV & WEATHER ADVISORY */}
-      <section className="max-w-[1320px] mx-auto px-4 py-4 w-full">
+      {/* 4.5 LIVE MANDI BHAV & FARMER HUB SPOTLIGHT */}
+      <section className="max-w-[1320px] mx-auto px-4 py-4 w-full space-y-4">
+        {/* Farmer Hub Spotlight CTA */}
+        <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 rounded-3xl p-5 sm:p-6 text-white shadow-md border border-emerald-600/40 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-2xl bg-amber-400 text-slate-950 flex items-center justify-center font-black text-2xl shadow-md shrink-0">
+              🌾
+            </div>
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/70 border border-amber-400/40 text-amber-300 text-[11px] font-bold mb-1">
+                नया • समर्पित किसान कल्याण केंद्र
+              </div>
+              <h2 className="text-lg sm:text-xl font-extrabold text-white">
+                किसान हब (Farmer Hub) — फसल सलाह, अनुदान व सिंचाई रोस्टर
+              </h2>
+              <p className="text-xs sm:text-sm text-emerald-100/80 mt-0.5 max-w-2xl">
+                तारबंदी व सोलर सब्सिडी, KVK कृषि एडवाइजरी, खाद-बीज कैलकुलेटर, चंबल नहर बारी व कामधेनु पशु बीमा।
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/farmer-hub"
+            className="w-full md:w-auto px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 font-extrabold text-xs sm:text-sm shadow-md transition shrink-0 text-center flex items-center justify-center gap-1.5"
+          >
+            पूरा किसान हब खोलें (Explore) ➔
+          </Link>
+        </div>
+
         <MandiWeatherWidget />
       </section>
 
